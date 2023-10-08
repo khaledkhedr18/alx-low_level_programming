@@ -7,6 +7,13 @@
 
 int main(void)
 {
-    char letters;
-    
+	char letters = 'a';
+
+	while (letters >= 'a' && letters <= 'z')
+	{
+	putchar(letters);
+	letters++;
+	}
+	putchar('\n');
+	return (0);
 }
