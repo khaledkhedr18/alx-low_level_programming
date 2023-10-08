@@ -9,7 +9,6 @@
 int main(void)
 {
 	int a = 0;
-	char b;
 
 	while (a < 16)
 {
