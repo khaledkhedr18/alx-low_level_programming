@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+
 /**
 * print_alphabet - Function that prints alphabet 10 times
 */
@@ -24,6 +24,8 @@ while (i <= 10)
  * Description: print alphabet in lowercase
  * Return: Always 0
 */
+
+#include "main.h"
 
 int main(void)
 {
