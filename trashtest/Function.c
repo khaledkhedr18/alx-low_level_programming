@@ -12,7 +12,7 @@ int max(int num1, int num2)
 
 int main(void) {
         int a = 130;
-        int b = 150;
+        int b = 20;
         int ret;
             
             ret = max(a, b);
