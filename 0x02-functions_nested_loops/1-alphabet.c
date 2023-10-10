@@ -7,11 +7,12 @@
 
 void print_alphabet(void)
 {
-    char c = 'a';
+	char c = 'a';
 
 	while (c >= 'a' && c <= 'z')
 	{
 	putchar(c);
+	putchar('\n')
 	c++;
 	}
 }
