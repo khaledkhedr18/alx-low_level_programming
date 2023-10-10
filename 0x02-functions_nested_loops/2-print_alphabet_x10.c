@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <main.h>
 /**
 * print_alphabet - Function that prints alphabet 10 times
 */
