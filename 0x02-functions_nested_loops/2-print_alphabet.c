@@ -4,10 +4,8 @@
  * Description: print alphabet in lowercase
  * Return: Always 0
 */
-
-int main(void)
-{
-	char letters;
+void print_alphabet(void){
+		char letters;
 	int i = 0;
 while(i <= 10)
 {
@@ -20,6 +18,10 @@ while(i <= 10)
 	putchar('\n');
 	i++;
 }
+}
+int main(void)
+{
+print_alphabet();
 	return (0);
 }
 
