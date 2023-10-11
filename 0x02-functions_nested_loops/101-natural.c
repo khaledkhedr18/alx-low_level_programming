@@ -13,8 +13,8 @@ int reversed = 0;
 	{
 	if (i % 3 == 0 || i % 5 == 0)
 	sum += i;
-	}  
-    if (sum == 0)
+	}
+	if (sum == 0)
 	{
 	putchar('0');
 	}
