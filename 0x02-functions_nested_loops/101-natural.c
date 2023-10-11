@@ -1,62 +1,37 @@
-#include "main.h"
 #include <stdio.h>
 
+int main() {
+    int sum = 0;
+    for (int i = 1; i < 1024; i++) {
+        if (i % 3 == 0 || i % 5 == 0) {
+            sum += i;
+        }
+    }
 
-/**
-  * print_times_table - prints the times table
-  * starting with 0.
-  *@n: a parameter for testing
-  */
-void print_times_table(int n)
-{
-	int number, multiply, product;
+    // Print the sum using putchar
+    if (sum == 0) {
+        putchar('0');
+    } else {
+        if (sum < 0) {
+            putchar('-');
+            sum = -sum;
+        }
 
-	if (n >= 0 && n <= 15)
-	{
-	for (number = 0; number <= n; number++)
-	{
-	_putchar('0');
-	for (multiply = 1; multiply <= n; multiply++)
-	{
-	_putchar(',');
-	_putchar(' ');
-	product = number * multiply;
-	if (product <= 99)
-	_putchar(' ');
-	if (product <= 9)
-	_putchar(' ');
-	if (product >= 100)
-	{
-	_putchar((product / 100) + '0');
-	_putchar(((product / 10)) % 10 + '0');
-	}
-	else if (product <= 99 && product >= 10)
-	{
-	_putchar((product / 10) + '0');
-	}
-	_putchar((product % 10) + '0');
-	}
-	_putchar('\n');
-	}
-	}
-}
+        // Print the digits of the sum one by one
+        int reversed = 0;
+        while (sum > 0) {
+            reversed = reversed * 10 + (sum % 10);
+            sum /= 10;
+        }
+        
+        while (reversed > 0) {
+            putchar('0' + (reversed % 10));
+            reversed /= 10;
+        }
+    }
 
-/**
- * main - Entry point
- * Return: Always 0
- */
+    // Print a newline
+    putchar('\n');
 
-int main(void)
-{
-	print_times_table(3);
-	_putchar('\n');
-
-	print_times_table(5);
-	_putchar('\n');
-
-	print_times_table(98);
-	_putchar('\n');
-
-	print_times_table(12);
-	return (0);
+    return 0;
 }
