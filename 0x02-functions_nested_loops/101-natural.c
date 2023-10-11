@@ -11,14 +11,15 @@ int reversed = 0;
 
 	for (i = 1; i < 1024; i++)
 	{
-	if (i % 3 == 0 || i % 5 == 0) {
+	if (i % 3 == 0 || i % 5 == 0)
 	sum += i;
-	}
 	}  
-    if (sum == 0) {
+    if (sum == 0)
+	{
 	putchar('0');
 	}
-	else {
+	else
+		{
 		if (sum < 0)
 		{
 			putchar('-');
@@ -36,5 +37,5 @@ int reversed = 0;
 		}
 		}
 		putchar('\n');
-		return 0;
+		return (0);
 }
