@@ -4,7 +4,7 @@
 /**
 * mul - Entry point
 * Return: always 0.
-* @c: testing placeholders 
+* @a: testing placeholders
 * @b: testing placeholders
 */
 
