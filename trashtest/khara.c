@@ -3,12 +3,11 @@
 int main(void)
 {
 
-int i;
+int a;
 
-i = 0;
-while (i < 10)
-{
-    printf("%d", i % 2);
-    i++;
-}
+	for(a = 0; a <= 9; a++)
+	{
+	putchar(a + '0');
+	}
+return (0);
 }
