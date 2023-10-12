@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
-* _isupper - Entry point
+* _isdigit - Entry point
 * Return: always 0.
 * @c: testing placeholder
 */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 48 && c <= 57)
 	{
 	return (1);
 	}
