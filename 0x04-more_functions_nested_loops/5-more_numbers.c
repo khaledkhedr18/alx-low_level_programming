@@ -1,9 +1,14 @@
 #include <stdio.h>
+#include "main.h"
 
-int main(void)
+/**
+* print_most_numbers - Entry point
+* Return: always void.
+*/
+
+void print_most_numbers(void)
 {
-
-int a;
+	int a;
 	int i;
 	for(i = 0; i <=14; i++)
 {
@@ -17,5 +22,4 @@ int a;
 	}
 	putchar('\n');
 }
-
 }
