@@ -23,7 +23,7 @@ int j;
 	{
 	printf(" Fizz");
 	}
-	else if (j ==1)
+	else if (j == 1)
 	{
 	printf("%d", j);
 	}
