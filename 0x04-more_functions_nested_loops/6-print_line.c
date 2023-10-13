@@ -9,7 +9,7 @@
 
 void print_line(int n)
 {
-int lines = 0;
+int lines = 1;
 	if (n <= 0)
 	{
 	putchar('\n');
