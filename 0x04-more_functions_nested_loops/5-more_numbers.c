@@ -3,7 +3,6 @@
 
 /**
 * more_numbers - Entry point
-* Return: always void.
 */
 
 void more_numbers(void)
