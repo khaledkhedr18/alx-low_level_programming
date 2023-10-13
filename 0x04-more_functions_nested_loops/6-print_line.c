@@ -21,6 +21,6 @@ else
 	putchar(95);
 	lines++;
 	}
-}
 putchar('\n');
+}
 }
