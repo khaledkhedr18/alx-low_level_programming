@@ -19,12 +19,12 @@ int i, j;
 	{
 		for (i = 0; i <= n; i++)
 		{
-			for (j = 0; j <= n; j++)
+				for (j = 0; j <= n; j++)
 				{
 					if (j == i)
 					putchar('\\');
 					else if (j < i)
-					putchar(' ');	
+					putchar(' ');
 				}
 		putchar('\n');
 		}
