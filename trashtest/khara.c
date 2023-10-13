@@ -2,20 +2,12 @@
 
 int main(void)
 {
+int lines;
+int n;9
 
-int a;
-	int i;
-	for(i = 0; i <=14; i++)
-{
-	for (a = 0; a <= 14; a++)
+	while(lines <= n)
 	{
-		if (a >= 10)
-	{
-	putchar('1');
+	putchar(95);
+	lines++;
 	}
-	putchar(a % 10 + '0');
-	}
-	putchar('\n');
-}
-
 }
