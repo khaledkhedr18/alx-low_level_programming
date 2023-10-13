@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
-* print_most_numbers - Entry point
+* more_numbers - Entry point
 * Return: always void.
 */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int a;
 	int i;
