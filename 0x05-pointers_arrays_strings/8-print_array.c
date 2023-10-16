@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
-* puts_half - a function that prints string
-* @str: a string placeholder
+* print_array - a function that prints string
+* @a: a string placeholder
+* @n: counter.
 * Return: void
 */
 
@@ -14,9 +15,10 @@ void print_array(int *a, int n)
 	{
 		printf("%d", a[0]);
 
-		for(i = 1; i < n; i++)
+		for (i = 1; i < n; i++)
 		{
 			printf(", %d", a[i]);
 		}
+		putchar('\n');
 	}
 }
