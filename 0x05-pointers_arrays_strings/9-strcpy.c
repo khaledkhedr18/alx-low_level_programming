@@ -13,7 +13,7 @@ char *_strcpy(char *dest, char *src)
 {
 	if (dest != NULL && src != NULL)
 	{
-		return(strcpy(dest,src));
+		return (strcpy(dest, src));
 	}
-	return NULL;
+	return (NULL);
 }
