@@ -22,7 +22,10 @@ char *cap_string(char *str)
 			for (j = 0; sep[j] != '\0'; j++)
 			if (str[i] == sep[j])
 			{
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+				{
 				str[i + 1] = toupper(str[i + 1]);
+				}
 			}
 		}
 	}
