@@ -19,6 +19,7 @@ char *cap_string(char *str)
 	{
 		for (i = 0; str[i] != '\0'; i++)
 		{
+			str[i] == isupper(str[i]);
 			for (j = 0; sep[j] != '\0'; j++)
 			if (str[i] == sep[j])
 			{
