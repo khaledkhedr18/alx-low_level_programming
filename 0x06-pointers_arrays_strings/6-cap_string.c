@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			for (j = 0; sep[j] != '\0'; j++)
-			if (str[i] == sep[j])
+			if (str[i] == sep[j] || str[i] == 0)
 			{
 				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 				{
