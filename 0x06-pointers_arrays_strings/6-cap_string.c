@@ -17,6 +17,9 @@ char *cap_string(char *str)
 
 	if (str != NULL)
 	{
+		if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] = toupper(str[0]);
+
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			for (j = 0; sep[j] != '\0'; j++)
