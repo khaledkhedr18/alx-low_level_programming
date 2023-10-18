@@ -12,14 +12,15 @@ char *cap_string(char *str)
 {
 	int i;
 	int j;
-	char sep[] = {',', ';', '.', '!', '?', '"', '(', ')', '}', '{', ' ', '\n', '\t'};
-	
+	char sep[] = {',', ';', '.', '!', '?',
+	'"', '(', ')', '}', '{', ' ', '\n', '\t'};
+
 	if (str != NULL)
 	{
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			for (j = 0; sep[j] != '\0'; j++)
-			if ( str[i] == sep[j])
+			if (str[i] == sep[j])
 			{
 				str[i + 1] = toupper(str[i + 1]);
 			}

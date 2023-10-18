@@ -10,6 +10,7 @@
 char *string_toupper(char *str)
 {
 	int i;
+
 	if (str != NULL)
 	{
 		for (i = 0; str[i] != '\0'; i++)
