@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
-* rev_string - a function that prints string
-* @s: a string placeholder
+* reverse_array - a function that reverses string
+* @n: a string placeholder
+* @a: a string placeholder
 * Return: void
 */
 

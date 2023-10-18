@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
-* rev_string - a function that prints string
-* @s: a string placeholder
+* string_toupper - a function that prints string
+* @str: a string placeholder
 * Return: void
 */
 
