@@ -8,26 +8,26 @@
 * Return: void
 */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i;
 	int j;
 	char sep[] = {',', ';', '.', '!', '?',
 	'"', '(', ')', '}', '{', ' ', '\n', '\t'};
 
-	if (str != NULL)
+	if (s != NULL)
 	{
-		for (i = 0; str[i] != '\0'; i++)
+		for (i = 0; s[i] != '\0'; i++)
 		{
 			for (j = 0; sep[j] != '\0'; j++)
-			if (str[i] == sep[j] || str[i] == 0)
+			if (s[i] == sep[j])
 			{
-				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 				{
-				str[i + 1] = toupper(str[i + 1]);
+				s[i + 1] = toupper(s[i + 1]);
 				}
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
