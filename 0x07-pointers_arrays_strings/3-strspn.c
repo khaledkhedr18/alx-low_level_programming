@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
-* _strspn : a cunction that gets the length of a prefix substring
+* _strspn - a function that gets the length of a prefix substring
 * Return: 0
 * @s: the first string
 * @accept: the group of the prefix to be compared
