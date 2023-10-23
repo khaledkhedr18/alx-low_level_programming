@@ -3,7 +3,10 @@
 #include <string.h>
 
 /**
-* _strchr 
+* _strchr - function that searches for a letter in a string
+* Return: Null
+* @s: string
+* @c: character
 */
 
 char *_strchr(char *s, char c)
