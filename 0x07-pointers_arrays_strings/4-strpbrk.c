@@ -4,7 +4,7 @@
 
 /**
 * _strpbrk - a function that searches a string for any of a set of bytes
-* return: NULL
+* Return: NULL
 * @s: the string that needs to be searched for
 * @accept: the string that we will search in
 */
