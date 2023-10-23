@@ -5,7 +5,7 @@ char *_strchr(char *s, char c);
 
 int main() {
     char str1[] = "Hello, World!";
-    char str2[] = "This is a test";
+    char str2[] = ".,l;p[This is a test";
     char str3[] = "OpenAI";
     char str4[] = "A quick brown fox";
     char str5[] = "1234567890";
