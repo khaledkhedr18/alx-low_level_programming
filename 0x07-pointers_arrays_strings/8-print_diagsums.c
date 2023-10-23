@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* print_diagsums: a function that sums the diagonals
+* print_diagsums - a function that sums the diagonals
 * Return: Void.
 * @a: the array itself
 * @size: the size of the diagonal that we want to sum from
@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		sum = sum + *(a + i * size + i);
-		sum2 = sum2 + *(a + i * size + (size - i -1));
+		sum2 = sum2 + *(a + i * size + (size - i - 1));
 	}
 	printf("%d, %d\n", sum, sum2);
 }
