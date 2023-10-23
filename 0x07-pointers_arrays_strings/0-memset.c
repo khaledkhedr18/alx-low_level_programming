@@ -4,7 +4,7 @@
 
 /**
 * _memset - this function fills memory witha constant bite
-* return: char
+* Return: always char
 * @s: the address of the memory needed to be filled
 * @b: the value filled with
 * @n: the number of bytes to be set to the value
