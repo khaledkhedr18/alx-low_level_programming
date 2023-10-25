@@ -4,7 +4,7 @@
 
 /**
 * _strlen_recursion - a function that prints a string
-* Return: void
+* Return: int
 * @s: the placeholder for our string
 */
 
