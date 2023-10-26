@@ -5,11 +5,12 @@
 * _sqrt_recursion - a function that returns the natural square root of a number
 * Return: int
 * @n: the number we're going to square root
+* @x: is an integer that is going to be declared in a later function.
 */
 int square(int n, int x);
 int _sqrt_recursion(int n)
 {
-		return (square(n,1));
+		return (square(n, 1));
 }
 
 /**
@@ -23,7 +24,7 @@ int square(int n, int x)
 {
 	if (x * x == n)
 	return (x);
-	else if ( x * x < n)
+	else if (x * x < n)
 	{
 		return (square(n, x + 1));
 	}
