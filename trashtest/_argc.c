@@ -1,22 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main (int argc, char *argv[])
+int main (int argc, char* argv[])
 {
-  int count;
+	int count;
+	int sum = 0;
 
-  printf ("This program was called with \"%s\".\n",argv[0]);
-
-  if (argc > 1)
-    {
-      for (count = 1; count < argc; count++)
+	if (argc > 1)
 	{
-	  printf("argv[%d] = %s\n", count, argv[count]);
+		printf("argc = %d\n", argc);
+		printf("what is in argv[] ?\n");
+		for (count = 1; count < argc; count++)
+		{
+			printf("arg[%d] = %s\n", count, argv[count]);
+			sum += atoi(argv[count]);
+		}
 	}
-    }
-  else
-    {
-      printf("The command had no other arguments.\n");
-    }
-
-  return 0;
+	printf("Sum = %d\n", sum);
+	return (0);
 }
