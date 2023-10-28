@@ -8,8 +8,9 @@
 * @argv: an array of strings that has the name of the arguments
 */
 
-int main(int argc, char* argv[])
+int main(int argc, char* const argv[])
 {
+	(void)argc;
 	printf("%s\n", *argv[0]);
 	return (0);
 }
