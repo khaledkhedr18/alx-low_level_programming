@@ -10,6 +10,9 @@
 
 int main(int argc, char const *argv[] __attribute__ ((unused)))
 {
-	printf("%d\n", argc);
+	int num;
+	if (argc > 1)
+	num = argc - 1;
+	printf("%d\n", num);
 	return (0);
 }
