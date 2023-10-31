@@ -12,18 +12,28 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *t1;
-	char *t2;
+	int t1 = 0;
+	int t2 = 0;
 	char *catted;
 
-	t1 = malloc(strlen(s1) + 1);
-	t2 = malloc(strlen(s2) + 1);
+	t1 = strlen(s1);
+	t2 = strlen(s2);
+	catted = malloc(t1 + t2 + 1);
+
+	if (s1 == NULL)
+	s1 = "";
+
+	if (s2 == NULL)
+	s2 = "";
 
 	if (s1 == NULL && s2 == NULL)
 	{
 		return (NULL);
 	}
-	catted = strcat(t1, t2);
+
+	strcpy(catted, s1);
+	strcat(catted, s2);
+
 	return (catted);
 
 }
