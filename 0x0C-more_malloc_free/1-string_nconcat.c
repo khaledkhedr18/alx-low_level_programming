@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
-* str_nconcat - a function that concatenates two strings
+* string_nconcat - a function that concatenates two strings
 * Return: char
 * @s1: first string
 * @s2: second string
@@ -34,3 +34,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	return (catted);
 }
+
