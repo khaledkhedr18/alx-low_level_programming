@@ -74,7 +74,7 @@ void print_int(unsigned long int n)
 
 int main(int argc, char const *argv[])
 {
-	(void)argc;
+	unsigned long int result;
 
 	if (argc != 3)
 	{
@@ -82,11 +82,9 @@ int main(int argc, char const *argv[])
 		exit(98);
 	}
 
-	unsigned long int result = _atoi(argv[1]) * _atoi(argv[2]);
+	result = _atoi(argv[1]) * _atoi(argv[2]);
 	print_int(result);
 	_putchar('\n');
-
-	return (0);
 
 	return (0);
 }
