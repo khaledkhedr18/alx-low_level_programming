@@ -81,8 +81,12 @@ int main(int argc, char const *argv[])
 		_puts("Error ");
 		exit(98);
 	}
-	print_int(atoi(argv[1])) * _atoi(argv[2]);
+
+	unsigned long int result = _atoi(argv[1]) * _atoi(argv[2]);
+	print_int(result);
 	_putchar('\n');
+
+	return (0);
 
 	return (0);
 }
