@@ -11,6 +11,7 @@
 void _puts(char *str)
 {
 	int i = 0;
+
 	while (str[i])
 	{
 		_putchar(str[i]);
@@ -56,9 +57,11 @@ void print_int(unsigned long int n)
 {
 	unsigned long int div = 1, i, r;
 
-	for (i = 0; n / div > 9; i++, div *= 10);
 
-	for (; div >= 1; n%= div, div /= 10)
+	for (i = 0; n / div > 9; i++, div *= 10)
+		;
+
+	for (; div >= 1; n %= div, div /= 10)
 	{
 		r = n / div;
 		_putchar('0' + r);
