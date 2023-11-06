@@ -3,7 +3,11 @@
 #include "dog.h"
 
 /**
-* struct dog - main structure
+* init_dog - main structure
+* @d: main structure pointer
+* @name: the name of the dog
+* @age: the age of the dog
+* @owner: the owner of the dog
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
