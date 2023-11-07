@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "dog.h"
 
+/**
+* print_dog - main function
+* @d: the pointer of the function
+*/
+
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
