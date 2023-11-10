@@ -27,15 +27,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i < n - 1)
 		{
 		unsigned int x = va_arg(nptr, int);
+
 		printf("%d%s", x, separator);
 		}
 		else if (i == n - 1)
 		{
 		unsigned int x = va_arg(nptr, int);
+
 		printf("%d", x);
 		}
 	}
 	printf("\n");
 	va_end(nptr);
-	return;
 }
