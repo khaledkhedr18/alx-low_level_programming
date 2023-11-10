@@ -16,12 +16,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(nptr, n);
 
-	if (separator == NULL || n == 0)
-	{
-		printf("\n");
-		return;
-	}
-
 	for (i = 0; i < n; i++)
 	{
 		unsigned int x = va_arg(nptr, int);
