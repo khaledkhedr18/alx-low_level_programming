@@ -11,7 +11,8 @@ typedef struct list_t *nodePtr;
 /**
 * struct list_t - a structure of a linked list
 * @str: a pointer to a string
-* @int: an integer that contains the length of the string.
+* @len: an integer that contains the length of the string.
+* @next: the tail of the node.
 */
 typedef struct list_t
 {
