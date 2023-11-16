@@ -8,6 +8,11 @@
 
 typedef struct list_t *nodePtr;
 
+/**
+* struct list_t - a structure of a linked list
+* @str: a pointer to a string
+* @int: an integer that contains the length of the string.
+*/
 typedef struct list_t
 {
 	char *str;
