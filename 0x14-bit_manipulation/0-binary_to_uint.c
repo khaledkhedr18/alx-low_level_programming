@@ -7,18 +7,18 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 	{
-		return 0; // Return 0 if the input string is NULL
+		return (0);
 	}
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			{
-				return 0; // Return 0 if there is a non-binary character in the string
+				return (0);
 	}
 
-		result = result * 2 + (b[i] - '0'); // Convert binary digit to decimal
+		result = result * 2 + (b[i] - '0');
 	}
 
-	return result;
+	return (result);
 }
