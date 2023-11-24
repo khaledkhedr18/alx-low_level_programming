@@ -19,5 +19,5 @@ count++;
 xor_result >>= 1;
 }
 
-return count;
+return (count);
 }
