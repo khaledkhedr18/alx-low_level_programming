@@ -9,8 +9,8 @@
 void executioner(const char *exec_comm)
 {
 	pid_t child_processid = fork();
-	char *argv[] = {exec_comm, NULL};
-    char *envp[] = {NULL};
+	const char *argv[] = {exec_comm, NULL};
+    	char *envp[] = {NULL};
 
 	if (child_processid == -1)
 	{
