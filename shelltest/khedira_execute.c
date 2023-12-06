@@ -9,6 +9,13 @@
 void executioner(const char *exec_comm)
 {
 	pid_t child_processid = fork();
+	char *command[4];
+	command[0] = "/bin/sh";
+    command[1] = "-c";
+    command[2] = (char *)exec_comm;
+    command[3] = NULL;
+    char *envp[] = {NULL};
+
 
 	if (child_processid == -1)
 	{
@@ -18,8 +25,6 @@ void executioner(const char *exec_comm)
 	
 	else if (child_processid == 0)
 	{
-		char *command[] = {"/bin/sh", "-c", exec_comm, NULL};
-        char *envp[] = {NULL};
 
 		execve(command[0], command, envp);
 		perror("exelve");
