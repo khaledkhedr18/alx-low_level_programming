@@ -11,6 +11,7 @@ int main(void)
 	while(true)
 	{
 		khedira_prompt();
-		fgets(khedira_prmpt, sizeof(khedira_prmpt), stdin);
+		khedira_user_input(khedira_prmpt, sizeof(khedira_prmpt));
+		executioner(khedira_prmpt);
 	}
 }
