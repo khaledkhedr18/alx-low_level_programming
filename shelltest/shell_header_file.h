@@ -1,6 +1,7 @@
 #ifndef SHELL_HEADER_FILE_H
 #define SHELL_HEADER_FILE_H
 
+#include <sys/wait.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
