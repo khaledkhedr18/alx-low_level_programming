@@ -9,6 +9,8 @@
 void executioner(const char *exec_comm)
 {
 	pid_t child_processid = fork();
+	char *argv[] = {exec_comm, NULL};
+    char *envp[] = {NULL};
 
 	if (child_processid == -1)
 	{
@@ -18,9 +20,9 @@ void executioner(const char *exec_comm)
 	
 	else if (child_processid == 0)
 	{
-		execlp(exec_comm, exec_comm, (char*)NULL);
-		perror("exelcp");
-		exit(EXIT_FAILURE);
+        execve(exec_comm, argv, envp);
+        perror("execve");
+        exit(EXIT_FAILURE);
 	}
 
 	else
