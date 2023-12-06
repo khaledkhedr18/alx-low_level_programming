@@ -11,6 +11,7 @@ void executioner(const char *exec_comm)
 	char *envp[] = {NULL};
 	pid_t child_processid = fork();
 	char *command[4];
+
 	command[0] = "/bin/sh";
 	command[1] = "-c";
 	command[2] = (char *)exec_comm;
@@ -22,7 +23,7 @@ void executioner(const char *exec_comm)
 		perror("fork failed!");
 		exit(EXIT_FAILURE);
 	}
-	
+
 	else if (child_processid == 0)
 	{
 

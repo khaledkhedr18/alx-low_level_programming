@@ -8,7 +8,7 @@ int main(void)
 {
 	char khedira_prmpt[128];
 
-	while(true)
+	while (true)
 	{
 		khedira_prompt();
 		khedira_user_input(khedira_prmpt, sizeof(khedira_prmpt));

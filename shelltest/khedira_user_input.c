@@ -1,6 +1,6 @@
 #include "shell_header_file.h"
 
-void khedira_user_input(char* comm, size_t size)
+void khedira_user_input(char *comm, size_t size)
 {
 	if (fgets(comm, size, stdin) == NULL)
 	{
