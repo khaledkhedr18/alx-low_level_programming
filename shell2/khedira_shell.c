@@ -14,6 +14,6 @@ int main(int argc, char *argv[])
 		khedira_prompt();
 		khedira_uinput(khedira_prmpt, sizeof(khedira_prmpt));
 		khedira_tokenize(khedira_prmpt, tokens, MYARGS);
-		khedira_exec(khedira_prmpt);
+		khedira_exec(tokens[0], tokens);
 	}
 }
