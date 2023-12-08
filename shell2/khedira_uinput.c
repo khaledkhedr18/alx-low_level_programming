@@ -7,7 +7,7 @@
  * @size: the size of the command
 */
 
-void khedira_uinput(const char *comm, size_t size_t)
+void khedira_uinput(const char *comm, size_t size)
 {
 	if (fgets(comm, size, stdin) == NULL)
 	{
