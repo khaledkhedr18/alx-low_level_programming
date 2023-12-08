@@ -24,7 +24,7 @@ void khedira_exec(const char *command) {
         execvp(args[0], args);
 
 
-        khedira("Error executing command.\n");
+        khedira("%s 1: not found\n", args[0]);
         exit(EXIT_FAILURE);
     } else {
 
