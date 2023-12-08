@@ -12,8 +12,8 @@
 
 void khedira(const char *output);
 void khedira_uinput(char *comm, size_t size_t);
-void khedira_prmpt();
-void execute_command(const char *exec_comm, char *const exec_args[]);
+void khedira_prompt();
+void khedira_exec(const char *exec_comm, char *const exec_args[]);
 
 
 #endif

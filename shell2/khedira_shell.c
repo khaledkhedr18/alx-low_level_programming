@@ -10,7 +10,7 @@ int main(void)
 
 	while (true)
 	{
-		khedira_prmpt();
+		khedira_prompt();
 		khedira_uinput(khedira_prmpt, sizeof(khedira_prmpt));
 		khedira_exec(khedira_prmpt);
 	}

@@ -8,7 +8,7 @@
 */
 
 
-void execute_command(const char *exec_comm, char *const exec_args[])
+void khedira_exec(const char *exec_comm, char *const exec_args[])
 {
 pid_t child_processid = fork();
 
