@@ -7,5 +7,5 @@
 
 void khedira_prmpt()
 {
-	khedira_print("$ ");
+	khedira("$ ");
 }

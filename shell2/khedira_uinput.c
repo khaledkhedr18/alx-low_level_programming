@@ -13,13 +13,13 @@ void khedira_uinput(const char *comm, size_t size_t)
 	{
 		if (feof(stdin))
 		{
-			khedira_print("\n");
+			khedira("\n");
 			exit(EXIT_SUCCESS);
 		}
 
 		else
 		{
-			khedira_print("Error while reading the input.\n");
+			khedira("Error while reading the input.\n");
 			exit(EXIT_FAILURE);
 		}
 	}

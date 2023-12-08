@@ -11,6 +11,8 @@
 #include <sys/wait.h>
 
 void khedira(const char *output);
+void khedira_uinput(const char *comm, size_t size_t);
+void khedira_prmpt();
 
 
 #endif
