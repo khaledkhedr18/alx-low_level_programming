@@ -6,25 +6,16 @@
 * @exec_comm: string argument
 */
 
-void executioner(const char *exec_comm, char *const args[])
+void executioner(const char *exec_comm)
 {
 	char *envp[] = {NULL};
 	pid_t child_processid = fork();
-	// char *command[4];
+	char *command[4];
 
-	// command[0] = "/bin/sh";
-	// command[1] = "-c";
-	// command[2] = (char *)exec_comm;
-	// command[3] = NULL;
-
-	// char *exec_comm_copy = strdup(exec_comm);
-
-	// char *khedira_token = strtok(exec_comm_copy, " ");
-	// while (khedira_token != NULL)
-	// {
-	// 	command[i++] = khedira_token;
-	// 	khedira_token = strtok(NULL, " ");
-	// }
+	command[0] = "/bin/sh";
+	command[1] = "-c";
+	command[2] = (char *)exec_comm;
+	command[3] = NULL;
 
 
 	if (child_processid == -1)
@@ -36,7 +27,7 @@ void executioner(const char *exec_comm, char *const args[])
 	else if (child_processid == 0)
 	{
 
-		execve(exec_comm, args, envp);
+		execve(command[0], command, envp);
 		perror("exelve");
 		exit(EXIT_FAILURE);
 	}
