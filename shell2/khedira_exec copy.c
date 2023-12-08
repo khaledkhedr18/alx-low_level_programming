@@ -6,7 +6,7 @@ void khedira_exec(const char *command) {
     pid_t child_pid = fork();
 
     if (child_pid == -1) {
-        leo_print("Error forking process.\n");
+        khedira("Error forking process.\n");
         exit(EXIT_FAILURE);
     } else if (child_pid == 0) {
         

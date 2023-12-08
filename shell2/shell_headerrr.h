@@ -8,7 +8,7 @@
 #include <stdarg.h>
 #include <stdbool.h>
 #include <sys/types.h>
-// #include <sys/wait.h>
+#include <sys/wait.h>
 
 void khedira(const char *output);
 void khedira_uinput(char *comm, size_t size_t);
