@@ -24,7 +24,7 @@ void khedira_exec(const char *command) {
         execvp(args[0], args);
 
 
-        leo_print("Error executing command.\n");
+        khedira("Error executing command.\n");
         exit(EXIT_FAILURE);
     } else {
 
