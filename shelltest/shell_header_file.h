@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <sys/wait.h>
+// #include <sys/wait.h>
 
 
 void khedira_print(const char *output);
