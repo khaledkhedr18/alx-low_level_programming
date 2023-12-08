@@ -1,7 +1,7 @@
 #include "shell_headerrr.h"
 
 
-void khedira_tokenize(const char *myinput, char *const mytokens[], int mylargestargs)
+void khedira_tokenize(char *myinput, char *const mytokens[], int mylargestargs)
 {
     char *command = strtok(myinput, " \n");
     int i = 0;
