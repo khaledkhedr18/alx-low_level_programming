@@ -6,7 +6,7 @@
 * @exec_comm: string argument
 */
 
-void executioner(const char *exec_comm, char const *args[])
+void executioner(const char *exec_comm, char *const args[])
 {
 	char *envp[] = {NULL};
 	pid_t child_processid = fork();

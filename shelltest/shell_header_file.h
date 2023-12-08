@@ -7,12 +7,12 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
-// #include <sys/wait.h>
+#include <sys/wait.h>
 
 
 void khedira_print(const char *output);
 void khedira_prompt(void);
-void executioner(const char *exec_comm);
+void executioner(const char *exec_comm, char const *args[]);
 void khedira_user_input(char *comm, size_t size);
 
 
