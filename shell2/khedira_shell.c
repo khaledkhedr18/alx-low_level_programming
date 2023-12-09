@@ -11,6 +11,6 @@ int main(int argc, char *argv[])
 	{
 		khedira_prompt();
 		khedira_uinput(khedira_prmpt, sizeof(khedira_prmpt));
-		khedira_exec(khedira_prmpt);
+		khedira_exec(khedira_prmpt, argv);
 	}
 }
