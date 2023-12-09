@@ -9,6 +9,7 @@
 
 int main(int ac, char **av)
 {
+	void(ac);
 	char khedira_prmpt[128];
 
 	while (true)
