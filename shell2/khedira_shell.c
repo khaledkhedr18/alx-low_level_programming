@@ -7,7 +7,7 @@
 * @argv: the strings of the arguments
 */
 
-int main(int argc, char *argv[])
+int main(int ac, char **av)
 {
 	char khedira_prmpt[128];
 
@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
 	{
 		khedira_prompt();
 		khedira_uinput(khedira_prmpt, sizeof(khedira_prmpt));
-		khedira_exec(khedira_prmpt, argv);
+		khedira_exec(khedira_prmpt, av);
 	}
 }
