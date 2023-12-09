@@ -1,8 +1,12 @@
 #include "shell_headerrr.h"
+
 /**
 * main - an entry point to the program
 * Return: Void
+* @argc: the number of arguments
+* @argv: the strings of the arguments
 */
+
 int main(int argc, char *argv[])
 {
 	char khedira_prmpt[128];
